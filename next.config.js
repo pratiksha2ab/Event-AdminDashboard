@@ -1,3 +1,5 @@
-module.exports = {
-  reactStrictMode: true,
-}
+var webpack=require("webpack")
+new webpack.ProvidePlugin({
+    $: "jquery",
+    jQuery: "jquery"
+})
